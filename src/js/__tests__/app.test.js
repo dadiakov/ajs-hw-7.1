@@ -11,4 +11,5 @@ test('Ckeck input', () => {
   expect(Validator.validateUsername('aas55---___11asdsd55asd-_1axXaя')).toBeFalsy();
   expect(Validator.validateUsername('aas55---___11asdsd555asd-_1axXa')).toBeFalsy();
   expect(Validator.validateUsername('aas55---___11asdsd55asd-_1axXa')).toBeTruthy();
+  expect(Validator.validateUsername('aa')).toBeTruthy();
 });
